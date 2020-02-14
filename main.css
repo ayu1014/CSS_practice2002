@@ -26,21 +26,99 @@ body{
     padding-bottom: 30px;
     color:white;
 }
+.time{
+    font-size: 15px;
+    color:grey;
+    align-self: right;
+}
 .member-list{
     border-bottom: solid white;
     border-top: solid white;
 
 }
+.todo-list{
+    border-top: solid white;
+
+}
+
+.wrap{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+}
 
 .end{
     text-align: right;
 }
+.task{
+    color:#345D5E
+}
+
+.list{
+    background-color: white;
+    border-bottom: green solid;
+    border-radius: 10px;
+    border-radius: 20px;
+}
+
 .border{
     border:solid white;
 }
 img{
     border-radius: 50%;
     align-self: center;
+}
+.todo-box >img{
+    width: 30px;
+    height:30px;
+
+}
+
+.todo-icon{
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+}
+
+.yellow{
+    border:solid #FBAD40;
+}
+.green{
+    border:solid #6CD236;
+}
+.red{
+    border:solid #FF6F52;
+}
+.blue{
+    border:solid #3490DD;
+}
+.pueple{
+    background-color:#8252F7 ;
+    border:solid #8252F7;
+}
+.pink{
+    background-color:#C553F4 ;
+    border:solid #C553F4;
+}
+
+.todo-box{
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom:solid lightgrey;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+.task{
+    flex:1;
+    align-self: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.small{
+    width: 100px;
+    height: 100px;
 }
 .name{
     text-align: center;
