@@ -1,8 +1,56 @@
 
+
+body{
+    background:-webkit-linear-gradient(bottom, #20A48A, #64E3FF);
+    background:-moz-linear-gradient(bottom, #20A48A, #64E3FF);
+    background:-o-linear-gradient(bottom, #20A48A, #64E3FF);
+    background:linear-gradient(bottom, #20A48A, #64E3FF);
+}
+.container{
+    padding-left:40px;
+    padding-right:40px;
+}
 .box-area{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+}
+.header{
+    border-bottom: solid white ;
+}
+.name{
+    font-size: 25px;
+    color:white;
+}
+.title{
+    font-size: 50px;
+    font-weight:bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color:white;
+}
+
+
+img{
+    border-radius: 50%;
+    align-self: center;
+}
+.name{
+    text-align: center;
+}
+.my-box{
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 38px;
+}
+.message-box{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
 }
 
 /*30min*/
