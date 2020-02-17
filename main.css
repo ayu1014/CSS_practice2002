@@ -61,6 +61,10 @@ body{
     border-radius: 20px;
 }
 
+.cercle{
+    stroke-width:15px;
+}
+
 .border{
     border:solid white;
 }
