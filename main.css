@@ -54,6 +54,10 @@ body{
     color:#345D5E
 }
 
+/*stroke-dasharray="0 1500"*/
+.circle{transform:rotate(-90deg);}
+.text-in-circle{transform:rotate(90deg);}
+
 .list{
     background-color: white;
     border-bottom: green solid;
