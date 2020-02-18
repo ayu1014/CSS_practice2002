@@ -125,6 +125,9 @@ img{
     padding-left: 15px;
     padding-right: 20px;
 }
+.bottom{
+    border-bottom:solid white;
+}
 
 .task{
     flex:1;
