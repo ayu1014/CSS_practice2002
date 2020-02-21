@@ -46,6 +46,19 @@ body{
     padding-bottom: 10px;
     display: flex;
 }
+.wrap2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.margine{
+ margin-top: 30px;
+}
+.wrap-nopadding{
+
+    display: flex;
+}
 
 .end{
     text-align: right;
