@@ -1,0 +1,61 @@
+
+リファクタリング
+http://creator.aainc.co.jp/archives/7680
+
+
+・ベンダープレフィックス
+・SCSS
+・itcss
+
+
+//ベンダープレフィックスは必要ないもの
+animation
+border-image
+border-radius
+box-shadow
+box-sizing
+text-shadow
+transform
+transition
+@keyframes
+
+//BEM
+Block__Element--Modifier
+
+//SCSS
+https://qiita.com/sasuraisan/items/9a9dfb281cfdf5a12bd3
+//@extendについて
+.tableHead {
+    background-color: #222;
+    color: #eee;
+    font-size: 12px;
+}
+
+@import "common.scss";   // 既存のscssをインポート
+
+.myTableHead {
+    @extend .tableHead;  // 既存のクラスが元になっている
+    font-size: 10px;     // ここだけ変更
+}
+
+//@mixinについて
+@mixin tableHeadMixin {  // 背景色と文字色だけ指定した未完成品
+    background-color: #222;
+    color: #eee;
+}
+
+@import "common.scss";   // 既存のscssをインポート
+
+.myTableHead {
+    font-size: 10px;     // フォントサイズさえ定義すれば
+    @include tableHeadMixin;  // あとはmixinをふりかければ色指定も完成
+}
+
+//SASS
+ コンパイラについて
+
+ //css記載方法
+ BEM風に記載
+ -todo.css
+ -member.css
+ -records.css

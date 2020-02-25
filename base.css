@@ -1,0 +1,17 @@
+/*全ファイル共通CSS*/
+.container{
+    padding-left:40px;
+    padding-right:40px;
+}
+.container__title{
+    font-size: 30px;
+    font-weight:bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color:white;
+}
+
+.container__title--bottom{
+    border-bottom:solid white;
+}
+

@@ -1,0 +1,25 @@
+.wrap-in-record{
+    display: flex;
+}
+.wrap-in-record__circle{
+    transform:rotate(-90deg);
+}
+.face-list{
+    border-bottom:solid white;
+}
+.face-list__wrap{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+}
+.wrap-in-record__arrow{
+    width: auto;
+    height: 100px;
+}
+.face-list__wrap--small{
+    width: 80px;
+    height: 80px;
+}
+.face-list__wrap--margine-right-20{
+    margin-right: 20px;
+}
