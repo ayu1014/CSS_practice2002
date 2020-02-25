@@ -26,26 +26,25 @@ body{
     padding-bottom: 30px;
     color:white;
 } */
-.time{
+/* .time{
     font-size: 15px;
     color:grey;
     align-self: right;
-}
+} */
 .member-list{
     border-bottom: solid white;
     border-top: solid white;
 
 }
-.todo-list{
+/* .todo-list{
     border-top: solid white;
+} */
 
-}
-
-.wrap{
+/* .wrap{
     padding-top: 30px;
     padding-bottom: 10px;
     display: flex;
-}
+} */
 .wrap2{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -70,7 +69,7 @@ body{
     color:#345D5E
 }
 
-/*stroke-dasharray="0 1500"*/
+stroke-dasharray="0 1500"
 .circle{
     transform:rotate(-90deg);
 }
@@ -143,9 +142,9 @@ img{
     padding-left: 15px;
     padding-right: 20px;
 }
-/* .bottom{
+.bottom{
     border-bottom:solid white;
-} */
+}
 
 .task{
     flex:1;

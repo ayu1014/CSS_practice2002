@@ -1,0 +1,84 @@
+.todo{
+    border-top: solid white;
+}
+.todo__wrap{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+}
+.todo__wrap--small{
+    width: 80px;
+    height: 80px;
+}
+.todo__list{
+    background-color: white;
+    border-bottom: green solid;
+    border-radius: 10px;
+    border-radius: 20px;
+}
+.todo__list__box{
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom:solid lightgrey;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+.todo__list__box--non-border{
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+.yellow{
+    border:solid #FBAD40;
+}
+.green{
+    border:solid #6CD236;
+}
+.red{
+    border:solid #FF6F52;
+}
+.blue{
+    border:solid #3490DD;
+}
+.pueple{
+    background-color:#8252F7 ;
+    border:solid #8252F7;
+}
+.pink{
+    background-color:#C553F4 ;
+    border:solid #C553F4;
+}
+.task{
+    color:#345D5E
+}
+.time{
+    font-size: 15px;
+    color:grey;
+    align-self: right;
+}
+.todo-icon{
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+}
+.todo__wrap2{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+}
+.todo__wrap2__arrow{
+    width: auto;
+    height: 100px;
+}
+.todo__wrap2__circle{
+    transform:rotate(-90deg);
+}
+.todo__wrap2__circle--text{
+    transform:rotate(90deg);
+}
+
+
