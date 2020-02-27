@@ -1,4 +1,11 @@
 /*全ファイル共通CSS*/
+body{
+    background:-webkit-linear-gradient(bottom, #20A48A, #64E3FF);
+    background:-moz-linear-gradient(bottom, #20A48A, #64E3FF);
+    background:-o-linear-gradient(bottom, #20A48A, #64E3FF);
+    background:linear-gradient(bottom, #20A48A, #64E3FF);
+}
+
 .container{
     padding-left:40px;
     padding-right:40px;
@@ -10,8 +17,31 @@
     padding-bottom: 30px;
     color:white;
 }
+.title{
+    font-size: 45px;
+    font-weight:bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color:white;
+}
 
-.container__title--bottom{
+.bottom{
     border-bottom:solid white;
+}
+img{
+    border-radius: 50%;
+    align-self: center;
+}
+.name{
+    font-size: 25px;
+    color:white;
+    text-align: center;
+}
+/*円グラフの回転*/
+.circle-degree-90{
+    transform:rotate(-90deg);
+}
+.text-in-circle{
+    transform:rotate(90deg);
 }
 

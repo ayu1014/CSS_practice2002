@@ -1,9 +1,7 @@
 .wrap-in-record{
     display: flex;
 }
-.wrap-in-record__circle{
-    transform:rotate(-90deg);
-}
+
 .face-list{
     border-bottom:solid white;
 }
@@ -22,4 +20,3 @@
 }
 .face-list__wrap--margine-right-20{
     margin-right: 20px;
-}

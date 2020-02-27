@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 
     <title>todo</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="base.css">
     <link rel="stylesheet" type="text/css" href="todo.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
@@ -12,10 +12,10 @@
 </head>
 <body>
     <div class="container">
-        <div class="title">
+        <div class="title bottom">
             2020年 3月
         </div>
-        <div class="todo">
+        <div>
             <div class="todo__wrap">
                 <img class="todo-list__wrap--small" src="img/sample04.png" title="sample04"> 
                 <div class="title">
@@ -56,10 +56,10 @@
             </div>
             <div class="todo__wrap2">
                 <img class="todo__wrap2__arrow" src="img/arrow_l.png" title="arrow"> 
-                <svg class="todo__wrap2__circle" width="800" height="800"  viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <text class="todo__wrap2__circle--text" x="-100" y="-90" style="font-size:10px;font-weight:bold;fill:white;">進捗率</text>
+                <svg class="circle-degree-90" width="800" height="800"  viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <text class="text-in-circle" x="-100" y="-90" style="font-size:10px;font-weight:bold;fill:white;">進捗率</text>
                     <circle cx="0" cy="0" r="80"  stroke="white" stroke-width="15" stroke-dasharray="377 125" stroke-dashoffset="0" fill="none" ></circle>
-                    <text class="todo__wrap2__circle--text" x="-30" y="0" dominant-baseline="central"　rotate="30" style="font-size:35px;font-weight:bold;fill:white;">75<tspan font-size="15" border-weight=none >%</tspan></text>
+                    <text class="text-in-circle" x="-30" y="0" dominant-baseline="central"　rotate="30" style="font-size:35px;font-weight:bold;fill:white;">75<tspan font-size="15" border-weight=none >%</tspan></text>
                 </svg>
                 <img class="todo__wrap2__arrow" src="img/arrow_r.png" title="arrow"> 
             </div>
