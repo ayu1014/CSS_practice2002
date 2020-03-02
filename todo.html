@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
 
     <title>todo</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
@@ -12,14 +12,14 @@
 </head>
 <body>
     <div class="container">
-        <div class="title bottom">
+        <div class="title bottom-line">
             2020年 3月
         </div>
         <div>
             <div class="todo__wrap">
                 <img class="todo-list__wrap--small" src="img/sample04.png" title="sample04"> 
-                <div class="title">
-                    Winney Pooh's ToDos
+                <div class="title margine-left-todo-title">
+                    尾本重明の予定
                 </div> 
             </div>
             <div class="todo__list">
@@ -54,14 +54,16 @@
                     <div class="time">18:00~19:30</div>
                 </div>
             </div>
+            <div class="title">
+                実績
+            </div>
             <div class="todo__wrap2">
-                <img class="todo__wrap2__arrow" src="img/arrow_l.png" title="arrow"> 
-                <svg class="circle-degree-90" width="800" height="800"  viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <text class="text-in-circle" x="-100" y="-90" style="font-size:10px;font-weight:bold;fill:white;">進捗率</text>
+                <img class="arrow" src="img/arrow_l.png" title="arrow"> 
+                <svg class="circle-degree-90" width="800" height="300"  viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="0" cy="0" r="80"  stroke="white" stroke-width="15" stroke-dasharray="377 125" stroke-dashoffset="0" fill="none" ></circle>
                     <text class="text-in-circle" x="-30" y="0" dominant-baseline="central"　rotate="30" style="font-size:35px;font-weight:bold;fill:white;">75<tspan font-size="15" border-weight=none >%</tspan></text>
                 </svg>
-                <img class="todo__wrap2__arrow" src="img/arrow_r.png" title="arrow"> 
+                <img class="arrow" src="img/arrow_r.png" title="arrow"> 
             </div>
         </div>
     </div>

@@ -1,5 +1,6 @@
 /*全ファイル共通CSS*/
-body{
+html{
+    min-height: 100%;
     background:-webkit-linear-gradient(bottom, #20A48A, #64E3FF);
     background:-moz-linear-gradient(bottom, #20A48A, #64E3FF);
     background:-o-linear-gradient(bottom, #20A48A, #64E3FF);
@@ -9,6 +10,7 @@ body{
 .container{
     padding-left:40px;
     padding-right:40px;
+    padding-bottom:40px
 }
 .container__title{
     font-size: 30px;
@@ -18,14 +20,13 @@ body{
     color:white;
 }
 .title{
-    font-size: 45px;
+    font-size: 35px;
     font-weight:bold;
     padding-top: 30px;
     padding-bottom: 30px;
     color:white;
 }
-
-.bottom{
+.bottom-line{
     border-bottom:solid white;
 }
 img{
@@ -44,4 +45,41 @@ img{
 .text-in-circle{
     transform:rotate(90deg);
 }
-
+.arrow{
+    width: auto;
+    height: 100px;
+}
+/*スマホ向け*/
+/* ウィンドウ幅が0〜479pxの場合に適用するCSS */
+@media screen and ( max-width:479px )
+{
+    .container{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .bottom-line{
+        border-bottom:solid white 1px;
+    }
+    img{
+        width:60px;
+        height:60px;
+    }
+    .title{
+        font-size: 18px;
+        padding-top: 13px;
+        padding-bottom: 10px;    
+    }
+    .name{
+        font-size:10px;
+    }
+    .margine-top-3-for-smartPhone{
+        margin-top: 3px;
+    }
+    .margine-bottom-20-for-smartPhone{
+        margin-bottom: 20px;
+    }
+    .arrow{
+        height:50px;
+    }
+        
+}
