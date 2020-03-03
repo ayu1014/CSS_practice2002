@@ -1,10 +1,15 @@
 /*全ファイル共通CSS*/
 html{
+    background-color:#20A48A;
     min-height: 100%;
-    background:-webkit-linear-gradient(bottom, #20A48A, #64E3FF);
-    background:-moz-linear-gradient(bottom, #20A48A, #64E3FF);
+}
+
+body{
+    background:-webkit-linear-gradient(bottom, #20A48A, #64E3FF);/*古いSafariなど向け*/
+    background:-moz-linear-gradient(bottom, #20A48A, #64E3FF);/*古いFireFox向け*/
     background:-o-linear-gradient(bottom, #20A48A, #64E3FF);
     background:linear-gradient(bottom, #20A48A, #64E3FF);
+    background-repeat:no-repeat;
 }
 
 .container{
@@ -20,21 +25,22 @@ html{
     color:white;
 }
 .title{
-    font-size: 35px;
+    font-size: 30px;
     font-weight:bold;
-    padding-top: 30px;
-    padding-bottom: 30px;
     color:white;
+    align-self: center;
 }
 .bottom-line{
-    border-bottom:solid white;
+    border-bottom:solid white 1px;
 }
 img{
+    width:160px;
+    height:160px;
     border-radius: 50%;
     align-self: center;
 }
 .name{
-    font-size: 25px;
+    font-size: 20px;
     color:white;
     text-align: center;
 }
@@ -49,13 +55,42 @@ img{
     width: auto;
     height: 100px;
 }
+.center{
+    align-items: center;
+}
+
+/*padding margine*/
+.inner-top-bottom-xl{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.inner-top-bottom-15{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.inner-bottom-l{
+    padding-bottom: 20px;
+}
+.inner-right-l{
+    padding-right: 20px;  
+}
+.inner-top-xs{
+    padding-top: 5px;
+}
+.inner-bottom-xs{
+    padding-bottom: 5px;
+}
+.bottom-margine-auto{
+    margin-bottom: auto;
+}
+
 /*スマホ向け*/
 /* ウィンドウ幅が0〜479pxの場合に適用するCSS */
 @media screen and ( max-width:479px )
 {
     .container{
-        padding-left:20px;
-        padding-right:20px;
+        padding-left:15px;
+        padding-right:15px;
     }
     .bottom-line{
         border-bottom:solid white 1px;
@@ -66,20 +101,55 @@ img{
     }
     .title{
         font-size: 18px;
-        padding-top: 13px;
-        padding-bottom: 10px;    
     }
     .name{
         font-size:10px;
     }
-    .margine-top-3-for-smartPhone{
-        margin-top: 3px;
+    .inner-top-bottom-xl{
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
-    .margine-bottom-20-for-smartPhone{
-        margin-bottom: 20px;
+    .inner-bottom-l{
+        padding-bottom: 10px;
     }
+    .inner-right-l{
+        padding-right: 10px;  
+    }    
+    .inner-top-xs{
+        padding-top: 3px;
+    }
+    .inner-bottom-xs{
+        padding-bottom: 3px;
+    }    
     .arrow{
         height:50px;
     }
-        
+}
+/* タブレット向け */
+@media screen and (min-width: 480px) and (max-width: 960px) {
+    .container{
+        padding-left:15px;
+        padding-right:15px;
+    }
+    img{
+        width:100px;
+        height:100px;
+    }
+    .name{
+        font-size: 13px;
+        color:white;
+        text-align: center;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .inner-bottom-l{
+        padding-bottom: 15px;
+    }
+    .inner-right-l{
+        padding-right: 15px;  
+    }
+    
+
+
 }

@@ -10,7 +10,7 @@
 .box{
     display: flex;
     flex-direction: column;
-    margin-top: 38px;
+    margin-top: auto;
 }
 .border{
     border:solid white;
@@ -21,7 +21,7 @@
 }
 .text{
     color:white;
-    font-size: 15px;
+    font-size: 20px;
     margin-top: 38px;
 }
 .end{
@@ -34,12 +34,17 @@
 }
 @media screen and ( max-width:479px )
 {
-    .box{
-        margin-top: 15px;
-    }
     .text{
         color:white;
         font-size: 12px;
+        margin-top: 15px;
+    }
+}
+/* タブレット向け */
+@media screen and (min-width: 480px) and (max-width: 960px) {
+    .text{
+        color:white;
+        font-size: 13px;
         margin-top: 15px;
     }
 }
