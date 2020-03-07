@@ -1,29 +1,19 @@
 
-.todo__wrap{
-    padding-top: 30px;
-    padding-bottom: 20px;
-    display: flex;
-}
-.todo__list{
+.todo-list{
     background-color: white;
     border-bottom: #345D5E solid;
     border-radius: 10px;
     border-radius: 20px;
 }
-.todo__list__box{
+.todo-box{
     display: flex;
     padding-top: 25px;
-    padding-bottom: 25px;
-    border-bottom:solid lightgrey;
     padding-left: 15px;
     padding-right: 20px;
+    padding-bottom: 25px;
 }
-.todo__list__box--non-border{
-    display: flex;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 15px;
-    padding-right: 20px;
+.border-bottom-lightgray{
+    border-bottom:solid lightgrey 1px;
 }
 .margine-left-todo-title{
     margin-left: 10px;
@@ -50,13 +40,13 @@
     border:solid #C553F4;
 }
 .todo-icon{
-    width: 60px;
-    height:60px;
+    width: 50px;
+    height:50px;
     border-radius: 50%;
 }
-.todo__list__box >img{
-    width: 60px;
-    height:60px;
+.todo-box >img{
+    width: 50px;
+    height:50px;
 } 
 .task{
     color:#345D5E;
@@ -65,24 +55,31 @@
     font-size: 30px;
     font-weight: bold;
     margin-left: 20px;
+    margin-right: 15px;
 }
 .time{
     font-size: 20px;
     color:grey;
-}
-.todo__wrap2{
-    padding-bottom: 10px;
-    display: flex;
 }
 @media screen and ( max-width:479px )
 {
     .margine-left-todo-title{
         margin-left: 5px;
     }
-    .todo__list__box >img{
-        width: 30px;
-        height:30px;
-    }     
+    .todo-box{
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+    }    
+    .todo-box >img{
+        width: 20px;
+        height:20px;
+    }
+    .todo-icon{
+        width: 20px;
+        height:20px;
+    }
     .task{
         font-size: 15px;
         margin-left: 20px;
@@ -90,11 +87,29 @@
     .time{
         font-size:10px;
     }
+}
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+    .todo-box{
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+    }    
+    .todo-box >img{
+        width: 30px;
+        height:30px;
+    }
     .todo-icon{
         width: 30px;
         height:30px;
     }
-}
+    .task{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .time{
+        font-size:15px;
+    }
 
-@media screen and (min-width: 480px) and (max-width: 960px) {
 }

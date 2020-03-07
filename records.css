@@ -1,11 +1,3 @@
-.wrap-in-record{
-    display: flex;
-}
-.face-list__wrap{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: flex;
-}
 .face-list__wrap--small{
     width: 80px;
     height: 80px;
@@ -13,17 +5,29 @@
 .face-list__wrap--margine-right{
     margin-right: 20px;
 }
+.img-line-box{
+    display: grid;
+    grid-row: auto;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
 
+}
+.img-box-test{
+    margin: auto;
+}
 /*smartphone対応*/
 @media screen and ( max-width:479px )
 {
-.face-list__wrap--small{
-    width: 35px;
-    height: 35px;
+.img-line-box{
+    grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
 }
 .face-list__wrap--margine-right{
     margin-right: 7px;
 }
 }
 @media screen and (min-width: 480px) and (max-width: 960px) {
+    .img-line-box{
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    }
+    
 }

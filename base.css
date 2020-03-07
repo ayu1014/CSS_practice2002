@@ -24,6 +24,12 @@ body{
     padding-bottom: 30px;
     color:white;
 }
+.wrap{
+    display: flex;
+}
+.contain-between-area{
+    justify-content: space-between;
+}
 .title{
     font-size: 30px;
     font-weight:bold;
@@ -39,6 +45,10 @@ img{
     border-radius: 50%;
     align-self: center;
 }
+.img-s{
+    width:60px;
+    height:60px;
+}
 .name{
     font-size: 20px;
     color:white;
@@ -53,7 +63,7 @@ img{
 }
 .arrow{
     width: auto;
-    height: 100px;
+    height: 50px;
 }
 .center{
     align-items: center;
@@ -73,6 +83,9 @@ img{
 }
 .inner-right-l{
     padding-right: 20px;  
+}
+.inner-top-l{
+    padding-top: 30px;
 }
 .inner-top-xs{
     padding-top: 5px;
@@ -99,6 +112,10 @@ img{
         width:60px;
         height:60px;
     }
+    .img-s{
+        width:30px;
+        height:30px;
+    }
     .title{
         font-size: 18px;
     }
@@ -122,7 +139,7 @@ img{
         padding-bottom: 3px;
     }    
     .arrow{
-        height:50px;
+        height:30px;
     }
 }
 /* タブレット向け */
@@ -134,6 +151,10 @@ img{
     img{
         width:100px;
         height:100px;
+    }
+    .img-s{
+        width:45px;
+        height:45px;
     }
     .name{
         font-size: 13px;
