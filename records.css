@@ -18,16 +18,12 @@
 /*smartphone対応*/
 @media screen and ( max-width:479px )
 {
-.img-line-box{
-    grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
-}
 .face-list__wrap--margine-right{
     margin-right: 7px;
 }
+.img-line-box{
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));    
+}
 }
 @media screen and (min-width: 480px) and (max-width: 960px) {
-    .img-line-box{
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    }
-    
 }
