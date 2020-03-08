@@ -1,173 +1,177 @@
 /*全ファイル共通CSS*/
-html{
-    background-color:#20A48A;
-    min-height: 100%;
+html {
+  background-color: #20a48a;
+  min-height: 100%;
 }
 
-body{
-    background:-webkit-linear-gradient(bottom, #20A48A, #64E3FF);/*古いSafariなど向け*/
-    background:-moz-linear-gradient(bottom, #20A48A, #64E3FF);/*古いFireFox向け*/
-    background:-o-linear-gradient(bottom, #20A48A, #64E3FF);
-    background:linear-gradient(bottom, #20A48A, #64E3FF);
-    background-repeat:no-repeat;
+body {
+  background: -webkit-linear-gradient(
+    bottom,
+    #20a48a,
+    #64e3ff
+  ); /*古いSafariなど向け*/
+  background: -moz-linear-gradient(
+    bottom,
+    #20a48a,
+    #64e3ff
+  ); /*古いFireFox向け*/
+  background: -o-linear-gradient(bottom, #20a48a, #64e3ff);
+  background: linear-gradient(bottom, #20a48a, #64e3ff);
+  background-repeat: no-repeat;
 }
 
-.container{
-    padding-left:40px;
-    padding-right:40px;
-    padding-bottom:40px
+.container {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
 }
-.container__title{
-    font-size: 30px;
-    font-weight:bold;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color:white;
+.container__title {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
 }
-.wrap{
-    display: flex;
+.wrap {
+  display: flex;
 }
-.contain-between-area{
-    justify-content: space-between;
+.contain-between-area {
+  justify-content: space-between;
 }
-.title{
-    font-size: 30px;
-    font-weight:bold;
-    color:white;
-    align-self: center;
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  align-self: center;
 }
-.bottom-line{
-    border-bottom:solid white 1px;
+.bottom-line {
+  border-bottom: solid white 1px;
 }
-img{
-    width:160px;
-    height:160px;
-    border-radius: 50%;
-    align-self: center;
+img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  align-self: center;
 }
-.img-s{
-    width:60px;
-    height:60px;
+.img-s {
+  width: 60px;
+  height: 60px;
 }
-.name{
-    font-size: 20px;
-    color:white;
-    text-align: center;
+.name {
+  font-size: 20px;
+  color: white;
+  text-align: center;
 }
 /*円グラフの回転*/
-.circle-degree-90{
-    transform:rotate(-90deg);
+.circle-degree-90 {
+  transform: rotate(-90deg);
 }
-.text-in-circle{
-    transform:rotate(90deg);
+.text-in-circle {
+  transform: rotate(90deg);
 }
-.arrow{
-    width: auto;
-    height: 50px;
+.arrow {
+  width: auto;
+  height: 50px;
 }
-.center{
-    align-items: center;
+.center {
+  align-items: center;
 }
 
 /*padding margine*/
-.inner-top-bottom-xl{
-    padding-top: 30px;
-    padding-bottom: 30px;
+.inner-top-bottom-xl {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-.inner-top-bottom-15{
-    padding-top: 15px;
-    padding-bottom: 15px;
+.inner-top-bottom-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-.inner-bottom-l{
-    padding-bottom: 20px;
+.inner-bottom-l {
+  padding-bottom: 20px;
 }
-.inner-right-l{
-    padding-right: 20px;  
+.inner-right-l {
+  padding-right: 20px;
 }
-.inner-top-l{
-    padding-top: 30px;
+.inner-top-l {
+  padding-top: 30px;
 }
-.inner-top-xs{
-    padding-top: 5px;
+.inner-top-xs {
+  padding-top: 5px;
 }
-.inner-bottom-xs{
-    padding-bottom: 5px;
+.inner-bottom-xs {
+  padding-bottom: 5px;
 }
-.bottom-margine-auto{
-    margin-bottom: auto;
+.bottom-margine-auto {
+  margin-bottom: auto;
 }
 
 /*スマホ向け*/
 /* ウィンドウ幅が0〜479pxの場合に適用するCSS */
-@media screen and ( max-width:479px )
-{
-    .container{
-        padding-left:15px;
-        padding-right:15px;
-    }
-    .bottom-line{
-        border-bottom:solid white 1px;
-    }
-    img{
-        width:60px;
-        height:60px;
-    }
-    .img-s{
-        width:30px;
-        height:30px;
-    }
-    .title{
-        font-size: 18px;
-    }
-    .name{
-        font-size:10px;
-    }
-    .inner-top-bottom-xl{
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .inner-bottom-l{
-        padding-bottom: 10px;
-    }
-    .inner-right-l{
-        padding-right: 10px;  
-    }    
-    .inner-top-xs{
-        padding-top: 3px;
-    }
-    .inner-bottom-xs{
-        padding-bottom: 3px;
-    }    
-    .arrow{
-        height:30px;
-    }
+@media screen and (max-width: 479px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .bottom-line {
+    border-bottom: solid white 1px;
+  }
+  img {
+    width: 60px;
+    height: 60px;
+  }
+  .img-s {
+    width: 30px;
+    height: 30px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .name {
+    font-size: 10px;
+  }
+  .inner-top-bottom-xl {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .inner-bottom-l {
+    padding-bottom: 10px;
+  }
+  .inner-right-l {
+    padding-right: 10px;
+  }
+  .inner-top-xs {
+    padding-top: 3px;
+  }
+  .inner-bottom-xs {
+    padding-bottom: 3px;
+  }
+  .arrow {
+    height: 30px;
+  }
 }
 /* タブレット向け */
 @media screen and (min-width: 480px) and (max-width: 960px) {
-    .container{
-        padding-left:15px;
-        padding-right:15px;
-    }
-    img{
-        width:100px;
-        height:100px;
-    }
-    .img-s{
-        width:45px;
-        height:45px;
-    }
-    .name{
-        font-size: 13px;
-        color:white;
-        text-align: center;
-    }
-    .inner-bottom-l{
-        padding-bottom: 15px;
-    }
-    .inner-right-l{
-        padding-right: 15px;  
-    }
-    
-
-
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  .img-s {
+    width: 45px;
+    height: 45px;
+  }
+  .name {
+    font-size: 13px;
+    color: white;
+    text-align: center;
+  }
+  .inner-bottom-l {
+    padding-bottom: 15px;
+  }
+  .inner-right-l {
+    padding-right: 15px;
+  }
 }

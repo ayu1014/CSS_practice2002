@@ -1,29 +1,25 @@
-.face-list__wrap--small{
-    width: 80px;
-    height: 80px;
+.face-list__wrap--small {
+  width: 80px;
+  height: 80px;
 }
-.face-list__wrap--margine-right{
-    margin-right: 20px;
+.face-list__wrap--margine-right {
+  margin-right: 20px;
 }
-.img-line-box{
-    display: grid;
-    grid-row: auto;
-    overflow: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
-
+.img-line-box {
+  display: grid;
+  grid-row: auto;
+  overflow: hidden;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
 }
-.img-box-test{
-    margin: auto;
+.img-box-test {
+  margin: auto;
 }
-/*smartphone対応*/
-@media screen and ( max-width:479px )
-{
-.face-list__wrap--margine-right{
+/*スマホ向け*/
+@media screen and (max-width: 479px) {
+  .face-list__wrap--margine-right {
     margin-right: 7px;
-}
-.img-line-box{
-    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));    
-}
-}
-@media screen and (min-width: 480px) and (max-width: 960px) {
+  }
+  .img-line-box {
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  }
 }
